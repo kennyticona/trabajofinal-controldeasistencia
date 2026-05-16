@@ -1,17 +1,17 @@
-def acceso_usuario():
- 
-  pass
+def acceso_usuario(username, password):
+    admin_user = "administrador" 
+    admin_pass = "1234"
+    
+    if username == admin_user and password == admin_pass:
+        print("Acceso concedido.")
+    else:
+        print("Usuario o contraseña incorrectos.")
 
 def main():
-  admin_user = "administrador" 
-  admin_pass = "1234" 
+    username = input("inserte usuario: ")
+    password = input("inserte password: ")
+  
+    acceso_usuario(username, password)
 
-  user_input_username = input("inserte usuario: ")
-  user_input_password = input("inserte password: ")
-
-  if user_input_username == admin_user and user_input_password == admin_pass:
-    print("Acceso concedido.")
-  else:
-    print("Usuario o contraseña incorrectos.")
-
+    
 main() 
