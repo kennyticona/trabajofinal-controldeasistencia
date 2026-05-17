@@ -18,16 +18,23 @@ def main():
     while True:
 
         print("===== SISTEMA DE ASISTENCIA =====")
-        print("1. Registrar asistencia")
-        print("2. Ver reporte")
-        print("3. Buscar empleado")
+        print("1. Buscar empleado")
+        print("2. Registrar asistencia")
+        print("3. Ver reporte")
         print("4. Ver total de empleados")
         print("5. Salir")
 
         opcion = input("Ingrese opcion: ")
 
-        # REGISTRAR INGRESO
+        # BUSCAR EMPLEADO
         if opcion == "1":
+
+            dato = input("Ingrese nombre o DNI del empleado: ")
+
+            buscar_empleado(dato, empleados, dni)
+
+        # REGISTRAR INGRESO
+        elif opcion == "2":
 
             nombre = input("Ingrese apellido y nombre: ")
             dni_ingresado = input("Ingrese DNI: ")
@@ -72,7 +79,7 @@ def main():
                 print("\nEmpleado no encontrado")
 
         # REPORTE DE INGRESO
-        elif opcion == "2":
+        elif opcion == "3":
 
             print("===== REPORTE DE ASISTENCIA =====")
 
@@ -82,13 +89,6 @@ def main():
                 print("DNI:", reporte_dni[i])
                 print("Hora de llegada:", reporte_horas[i])
                 print("Estado:", reporte_estado[i])
-
-        # BUSCAR EMPLEADO
-        elif opcion == "3":
-
-            dato = input("Ingrese nombre o DNI del empleado: ")
-
-            buscar_empleado(dato, empleados, dni)
 
         # MOSTRAR TOTAL DE EMPLEADOS
         elif opcion == "4":
