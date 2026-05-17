@@ -9,9 +9,10 @@ def hora_ingreso_trabajador(hora_ingreso, hora_ingreso_establecida):
 def main():
     hora_ingreso = int(input("Ingrese la hora de ingreso: "))
     hora_ingreso_establecida = 8
+    fecha_ingreso = input("Ingrese fecha de hoy dia/mes/año: ")
     
 
-    print("Generando reporte de asistencia")
+    print("Generando estado de asistencia")
     hora_ingreso_trabajador(hora_ingreso, hora_ingreso_establecida)
 
 
