@@ -24,15 +24,20 @@ while True:
 
     opcion = input("Ingrese opcion: ")
 
-    # REGISTRAR
+    # REGISTRAR INGRESO
     if opcion == "1":
 
         nombre = input("Ingrese apellido y nombre: ")
         dni_ingresado = input("Ingrese DNI: ")
-        hora = int(input("Ingrese hora de llegada: "))
+        hora = int(input("Ingrese hora de llegada(HH:MM): "))
         dia= input("Ingrese dia/mes/año")
         
         encontrado = False
+        #SEPARAR HORAS Y MINUTOS
+        hora_partes = hora.split(".")
+
+        hora_num = int(hora_partes[0])
+        minuto_num = int(minuto_partes[1])
 
         # VALIDAR EMPLEADO
         for i in range(len(empleados)):
@@ -41,7 +46,7 @@ while True:
 
                 encontrado = True
 
-                # VALIDAR ESTADO
+                # VALIDAR CONDICION DEL EMPLEADO
                 if hora <= 8:
                     estado = "PUNTUAL"
 
@@ -63,10 +68,10 @@ while True:
         if encontrado == False:
             print("\nEmpleado no encontrado")
 
-    # REPORTE
+    # REPORTE DE INGRESO
     elif opcion == "2":
 
-        print("===== REPORTE DE ASISTENCIA =====")
+        print("===== REPORTE DE ASISTENCIA ===___0")
 
         for i in range(len(reporte_nombres)):
 
