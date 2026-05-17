@@ -1,0 +1,14 @@
+“AccessIQ
+Software de Gestion de Registro de Asistencia, diseñado para la empresa INEISA S.A.C.”
+
+Integrantes del grupo de trabajo de 
+FUNDAMENTOS DE PROGRAMACION I
+
+GRUPOR NRO. 4
+
+ESTUDIANTES:
+    Bruno Cahua Eduardo Enrique
+    Joao Mendez Altamirano 
+    Ticona Huaman Kenny Roland 
+    Torres Daga Lisbeth Roxana 
+    
