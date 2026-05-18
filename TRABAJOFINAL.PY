@@ -53,17 +53,14 @@ def main():
                 minuto_num = int(hora_partes[1])
 
                 # VALIDAR CONDICION DEL EMPLEADO
-                if hora_num == 8 and minuto_num <= 10:
+                if hora_num == 0:
+                    estado = "FALTA"
+
+                elif hora_num == 8 and minuto_num <= 10:
                     estado = "PUNTUAL"
 
-                elif hora_num == 8 and minuto_num >= 11:
-                    estado = "TARDE"
-
-                elif hora_num > 8:
-                    estado = "TARDE"
-
                 else:
-                    estado = "FALTA"
+                    estado = "TARDE"
 
                 # GUARDAR DATOS
                 reporte_nombres.append(nombre)
