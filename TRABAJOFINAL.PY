@@ -63,7 +63,7 @@ def main():
                     estado = "TARDE"
 
                 else:
-                    estado = "FALTO"
+                    estado = "FALTA"
 
                 # GUARDAR DATOS
                 reporte_nombres.append(nombre)
